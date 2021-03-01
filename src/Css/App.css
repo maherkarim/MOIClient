@@ -1,0 +1,75 @@
+.App {
+  direction: "rtl";
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(140, 140, 140);
+}
+
+.react-autosuggest__container {
+  position: relative;
+  width: 400px;
+}
+
+.react-autosuggest__input {
+  font: inherit;
+  color: currentColor;
+  border: 0;
+  height: 1.1875em;
+  margin: 0;
+  display: block;
+  padding: 6px 0 7px;
+  background: none;
+  box-sizing: content-box;
+  animation-name: MuiInputBase-keyframes-auto-fill-cancel;
+  -webkit-tap-highlight-color: transparent;
+  margin-top: 13px;
+  margin-right: 5px;
+  width: 100%;
+}
+textarea:focus,
+input:focus {
+  outline: none;
+}
+.react-autosuggest__suggestions-container {
+  display: none;
+}
+
+.react-autosuggest__suggestions-container--open {
+  display: block;
+  position: absolute;
+  top: 47px;
+  /* width: 355px; */
+  width: 100%;
+  margin-left: -47px;
+  border: none;
+  background-color: #fff;
+  font-weight: 300;
+  font-size: 12px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  z-index: 2;
+  margin-right: 0px;
+  border-radius: 3px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: 350px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.19), 0 1px 1px rgba(0, 0, 0, 0.23);
+  z-index: 2000;
+}
+
+.react-autosuggest__suggestions-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.react-autosuggest__suggestion {
+  cursor: pointer;
+  padding: 5px 5px;
+  border: "3px";
+}
+
+.react-autosuggest__suggestion--highlighted {
+  background-color: #ddd;
+}

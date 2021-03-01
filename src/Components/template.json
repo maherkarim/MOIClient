@@ -1,0 +1,252 @@
+GET moi-jobs/_search
+
+PUT _template/moi-jobs
+{
+  "order": 0,
+  "index_patterns": [
+    "moi-jobs"
+  ],
+  "settings": {
+    "index": {
+      "number_of_replicas": "0",
+      "refresh_interval": "1s"
+    }
+  },
+  "mappings": {
+       "_meta": {},
+      "_source": {},
+      "properties": {
+         "ID": {
+          "type": "keyword"
+        } ,
+        "X": {
+          "type": "keyword"
+        } ,
+        "Y": {
+          "type": "keyword"
+        } ,
+        "CivilID": {
+          "type": "keyword"
+        } ,
+        "DetailsArabic": {
+          "type": "keyword"
+        } ,
+        "DetailsEnglish": {
+          "type": "keyword"
+        } ,
+        "EmployeeCivilId": {
+          "type": "keyword"
+        } ,
+        "EmployeeName": {
+          "type": "keyword"
+        } ,
+        "EmployeePhone": {
+          "type": "keyword"
+        } ,
+        "EmployeePosition": {
+          "type": "keyword"
+        } ,
+        "EOSPhone": {
+          "type": "keyword"
+        } ,
+        "ExternalCameraCount": {
+          "type": "keyword"
+        } ,
+        "FeatureType": {
+          "type": "keyword"
+        } ,
+              "InternalCameraCount": {
+          "type": "keyword"
+        } ,
+        "Nationality": {
+          "type": "keyword"
+        } ,
+        "Notes": {
+          "type": "keyword"
+        } ,
+        "RecordingDuration": {
+          "type": "keyword"
+        } ,
+        "Status": {
+          "type": "keyword"
+        } ,
+        "SystemExistance": {
+          "type": "keyword"
+        } ,
+        "SystemIdentical": {
+          "type": "keyword"
+        } ,
+        "TitleArabic": {
+          "type": "keyword"
+        } ,
+        "TitleEnglish": {
+          "type": "keyword"
+        } ,
+        "TotalCameraCount": {
+          "type": "keyword"
+        } ,
+        "Unit": {
+          "type": "keyword"
+        } ,
+        "LogDate":{
+          "type": "date"
+        },
+        "CreateDate":{
+          "type": "date"
+        },
+        "CreatedBy":{
+          "type": "keyword"
+        },
+        "UpdateDate":{
+          "type": "date"
+        },
+        "UpdatedBy":{
+          "type": "keyword"
+        },
+        "EntityName":{
+          "type": "keyword"
+      }
+    }
+  }
+}
+
+
+GET moi-logs/_search
+
+PUT _template/moi-logs
+{
+  "order": 0,
+  "index_patterns": [
+    "moi-logs"
+  ],
+  "settings": {
+    "index": {
+      "number_of_replicas": "0",
+      "refresh_interval": "1s"
+    }
+  },
+  "mappings": {
+       "_meta": {},
+      "_source": {},
+      "properties": {
+      
+        "X": {
+          "type": "keyword"
+        } ,
+        "Y": {
+          "type": "keyword"
+        } ,
+        "CivilID": {
+          "type": "keyword"
+        } ,
+        "DetailsArabic": {
+          "type": "keyword"
+        } ,
+        "DetailsEnglish": {
+          "type": "keyword"
+        } ,
+        "EmployeeCivilId": {
+          "type": "keyword"
+        } ,
+        "EmployeeName": {
+          "type": "keyword"
+        } ,
+        "EmployeePhone": {
+          "type": "keyword"
+        } ,
+        "EmployeePosition": {
+          "type": "keyword"
+        } ,
+        "EOSPhone": {
+          "type": "keyword"
+        } ,
+        "ExternalCameraCount": {
+          "type": "keyword"
+        } ,
+        "FeatureType": {
+          "type": "keyword"
+        } ,
+       
+        "InternalCameraCount": {
+          "type": "keyword"
+        } ,
+        "Nationality": {
+          "type": "keyword"
+        } ,
+        "Notes": {
+          "type": "keyword"
+        } ,
+        "RecordingDuration": {
+          "type": "keyword"
+        } ,
+        "Status": {
+          "type": "keyword"
+        } ,
+        "SystemExistance": {
+          "type": "keyword"
+        } ,
+        "SystemIdentical": {
+          "type": "keyword"
+        } ,
+        "TitleArabic": {
+          "type": "keyword"
+        } ,
+        "TitleEnglish": {
+          "type": "keyword"
+        } ,
+        "TotalCameraCount": {
+          "type": "keyword"
+        } ,
+        "Unit": {
+          "type": "keyword"
+        } ,
+        "logDate":{
+          "type": "date"
+        },
+        
+        "UpdateDate":{
+          "type": "date"
+        },
+        "UpdatedBy":{
+          "type": "keyword"
+        },
+        "EntityName":{
+          "type": "keyword"
+      }
+    }
+  }
+}
+
+
+
+GET moi-attachments/_search
+
+PUT _template/moi-attachments
+{
+  "order": 0,
+  "index_patterns": [
+    "moi-attachments"
+  ],
+  "settings": {
+    "index": {
+      "number_of_replicas": "0",
+      "refresh_interval": "1s"
+    }
+  },
+  "mappings": {
+       "_meta": {},
+      "_source": {},
+      "properties": {
+        "ID": {
+          "type": "keyword"
+        } ,    
+        "fileName":{
+          "type": "keyword"
+        },
+        "filePath":{
+          "type": "keyword"
+      }
+    }
+  }
+}
+

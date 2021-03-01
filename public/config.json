@@ -1,0 +1,86 @@
+{
+  "kfServerUrl": "https://kfappsrv.paci.gov.kw/kuwaitfinder/server/api/",
+  "appServerUrl": "http://localhost:4000/moi/server/",
+  "PACIApplicationServer1": "http://localhost:18163/PACIApplicationServer.svc/json/",
+  "PACIApplicationServer": "https://exgisapps.paci.gov.kw/dashboards/Server/PACIApplicationServer.svc/json/",
+  "PACIApplicationServercredentials": {
+    "UserName": "Takamul",
+    "Password": "P@$$H6klm11"
+  },
+  "proxyRules": [
+    {
+      "urlPrefix": "https://bsgevent.paci.gov.kw/server/rest/services/Hosted/",
+      "proxyUrl": "/client/proxy.ashx"
+    }
+  ],
+  "enableProxy": true,
+  "waitingdays": 7,
+  "mapping": {
+    "initialScale": 4513.9887055,
+    "minimumScale": 1155581.1085775,
+    "maximumScale": 1000.4971765,
+    "centerX": 47.8,
+    "centerY": 29.36179,
+    "zoom": 10,
+    "layers": {
+      "arabic": {
+        "digital": {
+          "light": {
+            "url": "https://paci.maps.arcgis.com/sharing/rest/content/items/97ec0a48672a43f6a026dce96c91b16c/resources/styles/root.json?f=pjson",
+            "mapType": "VectorTiled",
+            "labels": {
+              "url": "https://paci.maps.arcgis.com/sharing/rest/content/items/65f3742a8b7844c48e42ce7f113ad98a/resources/styles/root.json?f=pjson",
+              "mapType": "VectorTiled"
+            }
+          },
+          "dark": {
+            "url": "https://bsgevent.paci.gov.kw/portal/sharing/rest/content/items/e718a5ff39e741c7a792379d47d67abc/resources/styles/root.json?f=pjson",
+            "mapType": "VectorTiled",
+            "labels": {
+              "url": "https://bsgevent.paci.gov.kw/portal/sharing/rest/content/items/edc88ad2913046629b03058d181b15aa/resources/styles/root.json?f=pjson",
+              "mapType": "VectorTiled"
+            }
+          }
+        },
+        "satellite": {
+          "url": "https://tiles.arcgis.com/tiles/2zwTmDUxTzTVBytU/arcgis/rest/services/PACIImagery/MapServer",
+          "mapType": "Tiled",
+          "labels": {
+            "url": "https://paci.maps.arcgis.com/sharing/rest/content/items/b5187ad22f214f2ca083ff3be5525f22/resources/styles/root.json",
+            "mapType": "VectorTiled"
+          }
+        }
+      },
+      "english": {
+        "digital": {
+          "light": {
+            "url": "https://paci.maps.arcgis.com/sharing/rest/content/items/97ec0a48672a43f6a026dce96c91b16c/resources/styles/root.json?f=pjson",
+            "mapType": "VectorTiled",
+            "labels": {
+              "url": "https://paci.maps.arcgis.com/sharing/rest/content/items/51c58f981835475aa3dc16cc0670f52d/resources/styles/root.json?f=pjson",
+              "mapType": "VectorTiled"
+            }
+          },
+          "dark": {
+            "url": "http://paci.maps.arcgis.com/sharing/rest/content/items/e55773a652cd423a97152ac8d5f3cabe/resources/styles/root.json?f=pjson",
+            "mapType": "VectorTiled",
+            "labels": {
+              "url": "https://bsgevent.paci.gov.kw/portal/sharing/rest/content/items/4a2136d3ed4046108f7965c4e1a92831/resources/styles/root.json?f=pjson",
+              "mapType": "VectorTiled"
+            }
+          }
+        },
+        "satellite": {
+          "url": "https://tiles.arcgis.com/tiles/2zwTmDUxTzTVBytU/arcgis/rest/services/PACIImagery/MapServer",
+          "mapType": "Tiled",
+          "labels": {
+            "url": "https://paci.maps.arcgis.com/sharing/rest/content/items/a106e1c0a42b4afe85557dc261a0cb82/resources/styles/root.json",
+            "mapType": "VectorTiled"
+          }
+        }
+      },
+      "trafficLayer": "https://gis.paci.gov.kw/Traffic/rest/services/SampleWorldCities/MapServer",
+      "takamolGrocery": "https://bsgevent.paci.gov.kw/server/rest/services/Hosted/Grocery/FeatureServer/0"
+    }
+  }
+}

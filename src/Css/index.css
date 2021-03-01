@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "JF-Flat-regular";
+  src: url(../Fonts/JF-Flat-regular.ttf) format("truetype");
+}
+
+body {
+  margin: 0;
+  font-family: "JF-Flat-regular", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: auto;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+div,
+table,
+span,
+p,
+input,
+h5,
+h6,
+h3,
+h2,
+h1,
+h4,
+label,
+li,
+ul,
+.MuiTableCell-root {
+  font-family: "JF-Flat-regular" !important;
+  font-size: "10px" !important;
+}
+
+.MuiListItem-root,
+.MuiTypography-displayBlock {
+  text-align: right;
+}
